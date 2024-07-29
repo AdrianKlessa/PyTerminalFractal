@@ -37,9 +37,7 @@ def draw_to_terminal(c : complex, character_to_print="."):
     str_to_draw = ""
     for row in data:
         for cell in row:
-            #color_scheme.print_cell(cell, max_val)
             str_to_draw+=color_scheme.print_cell(cell, max_val, character_to_print)
-        #print("\n")
         str_to_draw +="\n"
     print(str_to_draw)
 
